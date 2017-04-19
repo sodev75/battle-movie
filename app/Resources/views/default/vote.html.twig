@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="wrapper">
+        <div class="container">
+        	<h1>Vote pour ta saga</h1>
+
+			<p class"row">Choisis ta saga en cliquant sur une des images :</p>
+			<div class="row imagesaga">
+					<a><img id="startrek" class="col-sm-2 imgsaga" src="{{ asset('img/startrek.png') }}" alt="" /></a>
+					<a><img id="starwars" class="col-sm-2 imgsaga" src="{{ asset('img/starwars.png') }}" alt="" /></a>
+			</div>
+			<div class="row">
+				 	<div class="col-sm-4">
+				 		<select class="form-control" name="" id="periode">
+						<option value="null">Choisis une période</option>
+						<option value="1970">A partir de 1970 à nos jours</option>
+						<option value="1980">A partir de 1980 à nos jours</option>
+						<option value="1990">A partir de 1990 à nos jours</option>
+						<option value="2000">A partir de 2000 à nos jours</option>
+						<option value="2010">A partir de 2010 à nos jours</option>
+						
+					</select>
+					
+					</div>
+			</div>
+			<div id="listfilms">
+			
+			</div>
+		  	
+			
+			</div>
+			
+
+        </div>
+    </div>
+{% block javascript %}
+
+<script type="text/javascript">
+ var path= "{{ path('note') }}";
+ var urlvote= jQuery(location).attr('href');
+
+</script>
+{% endblock %}
+{% endblock %}
+

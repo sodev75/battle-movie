@@ -1,0 +1,24 @@
+@CHARSET "ISO-8859-1";
+
+a{
+	color:white !important;
+}
+
+#periode{
+	display:none;
+}
+.imagesaga{
+	margin:20px 0;
+}
+#listfilms {
+	margin:40px 0;
+}
+.jumbotron{
+	background-image:url('../img/starswarsVsStartrek.png');
+	height: 480px;
+	color:#eee !important;
+}
+.jumbotron a {
+	text-align:center;
+	padding: 10px 55px;
+}
